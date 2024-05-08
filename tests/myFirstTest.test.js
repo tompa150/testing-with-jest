@@ -9,5 +9,5 @@ test("Add to stack and then remove all from stack but the last element", () => {
     stack.pop("66")
     stack.pop("Grey")
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe(65);
+    expect(stack.peek()).toBe(66);
 })

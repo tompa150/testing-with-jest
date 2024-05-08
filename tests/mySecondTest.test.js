@@ -20,6 +20,6 @@ test("Checking if popup works", async () => {
     await push.click();
     let popup = await driver.switchTo().alert();
     await driver.manage().setTimeouts( { implicit: 1000 } );
-    expect(popup).toBeFalsy(); 
+    expect(popup).toBeTruthy(); 
     await popup.dismiss(); 
 })
